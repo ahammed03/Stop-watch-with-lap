@@ -89,8 +89,9 @@ resetbtn.addEventListener('click', function () {
     hours = 0;
     minutes = 0;
     seconds = 0;
+    if (check===false){
     lapbtn.classList.toggle('hidden'); // Toggle visibility of lap button
-
+    };
     // Resetting start button appearance and state
     startbtn.innerHTML = '<i class="fas fa-play"></i>';
     startbtn.style.color = 'white';
