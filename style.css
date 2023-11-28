@@ -1,0 +1,54 @@
+/* Resetting margins and padding for all elements */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Styling for the entire body */
+body {
+    height: 100vh; /* Full viewport height */
+    /* Background using an image with cover size and centered */
+    background: url(black-mountain.jpeg) no-repeat center center/cover;
+}
+
+/* Styling for the digital clock container */
+.digital-clock {
+    box-shadow: 0px 0px 10px rgb(93, 92, 92); /* Adding box shadow */
+    /* Background using an image with cover size and centered, with some opacity */
+    background: url(black-stars.jpg) no-repeat center center/cover;
+    background-color: rgba(255, 255, 255, 0.1); /* Setting background color with opacity */
+    border: double 7px azure; /* Adding a double border with color azure */
+}
+
+/* Styling for the stop button */
+.rl-btn {
+    color: red; /* Setting color to red */
+}
+
+/* Styling for all 'i' elements (assuming they are icons) */
+i {
+    opacity: 0.8; /* Reducing opacity */
+}
+
+/* Styling for lap times */
+.lap-style {
+    text-align: center; /* Center-aligning text */
+    color: white; /* Setting text color to white */
+    opacity: 0.8; /* Reducing opacity */
+}
+
+/* Styling for the laps container */
+.laps {
+    padding: 5px 0px; /* Adding padding */
+    width: 70%; /* Setting width */
+    border: solid 2px rgb(255, 255, 255); /* Adding a solid border */
+    border-radius: 10px; /* Adding border radius */
+    max-height: 100px; /* Setting maximum height */
+    overflow-y: auto; /* Enabling vertical scrollbar when content exceeds height */
+    scroll-behavior: smooth; /* Smooth scrolling behavior */
+}
+
+/* Hiding the scrollbar for WebKit browsers */
+.laps::-webkit-scrollbar {
+    display: none;
+}
