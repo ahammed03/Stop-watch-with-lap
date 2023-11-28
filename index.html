@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+
+    <!-- Include Tailwind CSS from CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Include custom CSS file -->
+    <link rel="stylesheet" href="p4.css">
+
+    <!-- Include Font Awesome icons from CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="your-integrity-hash" crossorigin="anonymous">
+</head>
+
+<body class="flex justify-center items-center text-white">
+
+    <!-- Digital Clock Container -->
+    <div class="digital-clock rounded-2xl w-80 p-5 flex flex-col items-center space-y-4">
+        <!-- Timer Display -->
+        <div class="timer text-5xl">00:00:00</div>
+
+        <!-- Control Panel Buttons -->
+        <div class="control_panel space-x-7">
+            <button class="sp-btn"><i class="fas fa-play"></i></button> <!-- Play Button -->
+            <button class="rl-btn"><i class="fas fa-stop "></i></button> <!-- Stop Button -->
+            <button class="lapbtn hidden"><i class="fas fa-stopwatch"></i></button> <!-- Lap Button -->
+        </div>
+
+        <!-- Container for Lap Times -->
+        <div class="laps flex flex-col items-center"></div>
+    </div>
+
+    <!-- Include custom JavaScript file -->
+    <script src="p4.js"></script>
+</body>
+
+</html>
